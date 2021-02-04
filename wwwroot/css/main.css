@@ -2,25 +2,111 @@
     box-sizing: border-box;
 }
 
-.container {
-    display: grid;
+html, body {
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    background-color: #42566A;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.container {
+    display: grid;
+    margin: 0 auto;
+}
+
+.container > div {
+    background-color: rgb(241, 241, 241);
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.col-1 {
+    width: 8.33%;
+    padding: 5px;
+}
+.col-2 {
+    width: 16.66%;
+    padding: 5px;
+}
+.col-3 {
+    width: 25%;
+    padding: 5px;
+}
+.col-4 {
+    width: 33.33%;
+    padding: 5px;
+}
+.col-5 {
+    width: 41.66%;
+    padding: 5px;
+}
+.col-6 {
+    width: 50%;
+    padding: 5px;
+}
+.col-7 {
+    width: 58.33%;
+    padding: 5px;
+}
+.col-8 {
+    width: 66.66%;
+    padding: 5px;
+}
+.col-9 {
+    width: 75%;
+    padding: 5px;
+}
+.col-10 {
+    width: 83.33%;
+    padding: 5px;
+}
+.col-11 {
+    width: 91.66%;
+    padding: 5px;
+}
+.col-12 {
+    width: 100%;
+    padding: 5px;
+}
 
 .row::after {
     content: "";
     clear: both;
     display: grid;
+}
+
+/* navbar */
+
+ul.navbar {
+    list-style-type: none;
+    margin: auto auto 10px;
+    width: 60%;
+    padding: 2px;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+ul.vert {
+    list-style-type: circle;
+    margin: auto;
+}
+
+
+ul.navbar > li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #F6F1F6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #000000;
+    background-color: #f6f6f6;
 }
